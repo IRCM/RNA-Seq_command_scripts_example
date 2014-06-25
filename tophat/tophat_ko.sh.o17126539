@@ -1,0 +1,25 @@
+----------------------------------------
+Begin PBS Prologue Fri Jun 20 19:37:42 EDT 2014 1403307462
+Job ID:		17126539.gm-1r16-n04.guillimin.clumeq.ca
+Username:	blancha
+Group:		afb-431-02
+Nodes:		sw-2r09-n12
+End PBS Prologue Fri Jun 20 19:37:43 EDT 2014 1403307463
+----------------------------------------
+----------------------------------------
+Begin PBS Epilogue Sat Jun 21 00:49:31 EDT 2014 1403326171
+Job ID:		17126539.gm-1r16-n04.guillimin.clumeq.ca
+Username:	blancha
+Group:		afb-431-02
+Job Name:	tophat_ko.sh
+Session:	31493
+Limits:		neednodes=1:ppn=3,nodes=1:ppn=3,pmem=2700mb,walltime=48:00:00
+Resources:	cput=09:59:53,mem=3383872kb,vmem=3980316kb,walltime=05:11:49
+Queue:		sw-serial
+Account:	afb-431-ac
+Exit code:	0
+Nodes:	sw-2r09-n12
+Killing leftovers...
+
+End PBS Epilogue Sat Jun 21 00:49:32 EDT 2014 1403326172
+----------------------------------------

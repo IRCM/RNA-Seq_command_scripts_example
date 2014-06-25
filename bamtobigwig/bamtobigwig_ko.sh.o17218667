@@ -1,0 +1,28 @@
+----------------------------------------
+Begin PBS Prologue Wed Jun 25 16:52:09 EDT 2014 1403729529
+Job ID:		17218667.gm-1r16-n04.guillimin.clumeq.ca
+Username:	blancha
+Group:		afb-431-02
+Nodes:		sw-2r09-n71
+End PBS Prologue Wed Jun 25 16:52:09 EDT 2014 1403729529
+----------------------------------------
+/var/spool/pbs/mom_priv/jobs/17218667.gm-1r16-n04.guillimin.clumeq.ca.SC: line 7: ../../results/bedgraph/ko.bedgraph: No such file or directory
+sed: can't read ../../results/bedgraph/ko.bedgraph: No such file or directory
+sed: can't read ../../results/bedgraph/ko.bedgraph: No such file or directory
+----------------------------------------
+Begin PBS Epilogue Wed Jun 25 16:52:12 EDT 2014 1403729532
+Job ID:		17218667.gm-1r16-n04.guillimin.clumeq.ca
+Username:	blancha
+Group:		afb-431-02
+Job Name:	bamtobigwig_ko.sh
+Session:	687
+Limits:		neednodes=serial,pmem=2700mb,walltime=03:00:00
+Resources:	cput=00:00:00,mem=0kb,vmem=0kb,walltime=00:00:02
+Queue:		serial-short
+Account:	afb-431-ac
+Exit code:	255
+Nodes:	sw-2r09-n71
+Killing leftovers...
+
+End PBS Epilogue Wed Jun 25 16:52:12 EDT 2014 1403729532
+----------------------------------------

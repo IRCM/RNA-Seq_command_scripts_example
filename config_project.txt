@@ -1,0 +1,13 @@
+[user]
+RAPid=afb-431-ac
+mail=alexis.blanchet-cohen@ircm.qc.ca
+send_email = # bae (b:beginning, a: abort, e: end)
+
+[project]
+type = rnaseq
+genome = GRCm38
+trim = no
+stranded = yes
+
+[cuffdiff]
+comparisons = ko vs wt 

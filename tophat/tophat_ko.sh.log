@@ -1,0 +1,37 @@
+
+[2014-06-20 19:37:43] Beginning TopHat run (v2.0.10)
+-----------------------------------------------
+[2014-06-20 19:37:43] Checking for Bowtie
+		  Bowtie version:	 2.1.0.0
+[2014-06-20 19:37:43] Checking for Samtools
+		Samtools version:	 0.1.19.0
+[2014-06-20 19:37:43] Checking for Bowtie index files (genome)..
+[2014-06-20 19:37:43] Checking for reference FASTA file
+[2014-06-20 19:37:43] Generating SAM header for /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/Bowtie2Index/genome
+[2014-06-20 19:37:57] Reading known junctions from GTF file
+[2014-06-20 19:38:10] Preparing reads
+	 left reads: min. length=30, max. length=50, 52518984 kept reads (1522 discarded)
+	right reads: min. length=30, max. length=50, 52507956 kept reads (12550 discarded)
+[2014-06-20 20:00:06] Building transcriptome data files /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/tmp/Mus_musculus.GRCm38.75
+[2014-06-20 20:00:43] Building Bowtie index from Mus_musculus.GRCm38.75.fa
+[2014-06-20 20:15:26] Mapping left_kept_reads to transcriptome Mus_musculus.GRCm38.75 with Bowtie2 
+[2014-06-20 20:54:56] Mapping right_kept_reads to transcriptome Mus_musculus.GRCm38.75 with Bowtie2 
+[2014-06-20 21:34:34] Resuming TopHat pipeline with unmapped reads
+[2014-06-20 21:34:35] Mapping left_kept_reads.m2g_um to genome genome with Bowtie2 
+[2014-06-20 21:41:57] Mapping left_kept_reads.m2g_um_seg1 to genome genome with Bowtie2 (1/2)
+[2014-06-20 21:43:02] Mapping left_kept_reads.m2g_um_seg2 to genome genome with Bowtie2 (2/2)
+[2014-06-20 21:44:24] Mapping right_kept_reads.m2g_um to genome genome with Bowtie2 
+[2014-06-20 21:53:14] Mapping right_kept_reads.m2g_um_seg1 to genome genome with Bowtie2 (1/2)
+[2014-06-20 21:55:53] Mapping right_kept_reads.m2g_um_seg2 to genome genome with Bowtie2 (2/2)
+[2014-06-20 21:58:39] Retrieving sequences for splices
+[2014-06-20 22:02:06] Indexing splices
+[2014-06-20 22:03:41] Mapping left_kept_reads.m2g_um_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2014-06-20 22:04:44] Mapping left_kept_reads.m2g_um_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2014-06-20 22:05:45] Joining segment hits
+[2014-06-20 22:10:14] Mapping right_kept_reads.m2g_um_seg1 to genome segment_juncs with Bowtie2 (1/2)
+[2014-06-20 22:11:17] Mapping right_kept_reads.m2g_um_seg2 to genome segment_juncs with Bowtie2 (2/2)
+[2014-06-20 22:12:16] Joining segment hits
+[2014-06-20 22:14:49] Reporting output tracks
+-----------------------------------------------
+[2014-06-21 00:49:31] A summary of the alignment counts can be found in /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/align_summary.txt
+[2014-06-21 00:49:31] Run complete: 05:11:47 elapsed

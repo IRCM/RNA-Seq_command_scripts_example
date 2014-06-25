@@ -1,0 +1,26 @@
+----------------------------------------
+Begin PBS Prologue Mon Jun 16 19:50:59 EDT 2014 1402962659
+Job ID:		17008076.gm-1r16-n04.guillimin.clumeq.ca
+Username:	blancha
+Group:		afb-431-02
+Nodes:		sw-2r12-n71
+End PBS Prologue Mon Jun 16 19:51:05 EDT 2014 1402962665
+----------------------------------------
+=>> PBS: job killed: walltime 10828 exceeded limit 10800
+----------------------------------------
+Begin PBS Epilogue Mon Jun 16 22:51:33 EDT 2014 1402973493
+Job ID:		17008076.gm-1r16-n04.guillimin.clumeq.ca
+Username:	blancha
+Group:		afb-431-02
+Job Name:	bamtofastq_HI.1774.008.Index_6.JL_wt.sh
+Session:	8299
+Limits:		neednodes=serial,pmem=2700mb,walltime=03:00:00
+Resources:	cput=02:40:13,mem=861192kb,vmem=1164072kb,walltime=03:00:28
+Queue:		serial-short
+Account:	afb-431-ac
+Exit code:	-11
+Nodes:	sw-2r12-n71
+Killing leftovers...
+
+End PBS Epilogue Mon Jun 16 22:51:34 EDT 2014 1402973494
+----------------------------------------

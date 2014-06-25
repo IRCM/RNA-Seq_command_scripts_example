@@ -1,0 +1,3 @@
+Sample ID	Bam File	Notes
+ko	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam	ko
+wt	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam	wt

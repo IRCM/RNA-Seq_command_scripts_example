@@ -1,0 +1,170 @@
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/gs/scratch/blancha
+RNA-SeQC v1.1.7 05/14/12
+Creating rRNA Interval List based on given GTF annotations
+Retriving contig names from reference
+	 contig names in reference: 22
+Loading GTF for Read Counting
+Converting to refGene
+Transcript objects to RefGen format:	0 s
+java.lang.RuntimeException: No rRNA found in GTF transcript_type field
+	at org.broadinstitute.cga.rnaseq.TranscriptList.toRRNAIntervalList(TranscriptList.java:414)
+	at org.broadinstitute.cga.rnaseq.RNASeqMetrics.createRefGeneAndRRNAFiles(RNASeqMetrics.java:1288)
+	at org.broadinstitute.cga.rnaseq.RNASeqMetrics.prepareFiles(RNASeqMetrics.java:191)
+	at org.broadinstitute.cga.rnaseq.RNASeqMetrics.execute(RNASeqMetrics.java:165)
+	at org.broadinstitute.cga.rnaseq.RNASeqMetrics.main(RNASeqMetrics.java:135)
+No information for rRNA available. Continuing without rRNA calculations. (Using the -BWArRNA flag for best results)
+Running IntronicExpressionReadBlock Walker ....
+Arguments: [-T, IntronicExpressionReadBlock, --outfile_metrics, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/ko.metrics.tmp.txt, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam, -refseq, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/refGene.txt, -l, ERROR]
+Finished writing /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/ko.metrics.tmp.txt.intronReport.txt
+Finished writing /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/ko.metrics.tmp.txt.intronReport.txt_intronOnly.txt, now creating RPKM values for introns ..
+GATK command result code: 0
+	 ... GATK CoutReadMetrics Analysis DONE
+CountReadMetricsWalker Runtime:	8 min
+Running IntronicExpressionReadBlock Walker ....
+Arguments: [-T, IntronicExpressionReadBlock, --outfile_metrics, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/wt.metrics.tmp.txt, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam, -refseq, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/refGene.txt, -l, ERROR]
+Finished writing /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/wt.metrics.tmp.txt.intronReport.txt
+Finished writing /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/wt.metrics.tmp.txt.intronReport.txt_intronOnly.txt, now creating RPKM values for introns ..
+GATK command result code: 0
+	 ... GATK CoutReadMetrics Analysis DONE
+CountReadMetricsWalker Runtime:	17 min
+Calculating library complexity for ko
+Libary Complexity Calculation Time:	244 s
+Calculating library complexity for wt
+Libary Complexity Calculation Time:	408 s
+Stratifying Transcripts By Expression
+Number of expressed transcripts at this cuttoff: 	51951
+Number of expressed transcripts at this cuttoff: 	50815
+Expression file for DoC:	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr/ko.transcripts.list
+Writing DoC per gene into: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr
+Loading transcripts
+Preparing intervals for 1000 transcripts
+Interval Loading:	5 s
+Creating interval list
+Writing intervals from transcript objects
+Transcript objects to interval list conversion:	0 s
+Expression file for DoC:	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr/wt.transcripts.list
+Writing DoC per gene into: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr
+Loading transcripts
+Preparing intervals for 1000 transcripts
+Interval Loading:	5 s
+Creating interval list
+Writing intervals from transcript objects
+Transcript objects to interval list conversion:	0 s
+Expression file for DoC:	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr/ko.transcripts.list
+Writing DoC per gene into: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr
+Loading transcripts
+Preparing intervals for 1000 transcripts
+Interval Loading:	5 s
+Creating interval list
+Writing intervals from transcript objects
+Transcript objects to interval list conversion:	0 s
+Expression file for DoC:	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr/wt.transcripts.list
+Writing DoC per gene into: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr
+Loading transcripts
+Preparing intervals for 1000 transcripts
+Interval Loading:	5 s
+Creating interval list
+Writing intervals from transcript objects
+Transcript objects to interval list conversion:	0 s
+Expression file for DoC:	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr/ko.transcripts.list
+Writing DoC per gene into: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr
+Loading transcripts
+Preparing intervals for 1000 transcripts
+Interval Loading:	5 s
+Creating interval list
+Writing intervals from transcript objects
+Transcript objects to interval list conversion:	0 s
+Expression file for DoC:	/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr/wt.transcripts.list
+Writing DoC per gene into: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr
+Loading transcripts
+Preparing intervals for 1000 transcripts
+Interval Loading:	5 s
+Creating interval list
+Writing intervals from transcript objects
+Transcript objects to interval list conversion:	0 s
+Running GATK Depth of Coverage Analysis ....
+Arguments:	-T DepthOfCoverage -R /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa -I /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam -o /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr//perBaseDoC.out -L /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr/intervals.list -l ERROR
+Arguments Array:	[-T, DepthOfCoverage, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam, -o, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr//perBaseDoC.out, -L, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr/intervals.list, -l, ERROR]
+GATK command result code: 0
+Depth of Coverage run time:	2 min
+	 ... GATK Depth of Coverage Analysis DONE
+Running GATK Depth of Coverage Analysis ....
+Arguments:	-T DepthOfCoverage -R /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa -I /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam -o /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr//perBaseDoC.out -L /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr/intervals.list -l ERROR
+Arguments Array:	[-T, DepthOfCoverage, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam, -o, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr//perBaseDoC.out, -L, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr/intervals.list, -l, ERROR]
+GATK command result code: 0
+Depth of Coverage run time:	3 min
+	 ... GATK Depth of Coverage Analysis DONE
+Running GATK Depth of Coverage Analysis ....
+Arguments:	-T DepthOfCoverage -R /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa -I /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam -o /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr//perBaseDoC.out -L /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr/intervals.list -l ERROR
+Arguments Array:	[-T, DepthOfCoverage, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam, -o, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr//perBaseDoC.out, -L, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr/intervals.list, -l, ERROR]
+GATK command result code: 0
+Depth of Coverage run time:	5 min
+	 ... GATK Depth of Coverage Analysis DONE
+Running GATK Depth of Coverage Analysis ....
+Arguments:	-T DepthOfCoverage -R /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa -I /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam -o /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr//perBaseDoC.out -L /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr/intervals.list -l ERROR
+Arguments Array:	[-T, DepthOfCoverage, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam, -o, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr//perBaseDoC.out, -L, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr/intervals.list, -l, ERROR]
+GATK command result code: 0
+Depth of Coverage run time:	6 min
+	 ... GATK Depth of Coverage Analysis DONE
+Running GATK Depth of Coverage Analysis ....
+Arguments:	-T DepthOfCoverage -R /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa -I /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam -o /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr//perBaseDoC.out -L /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr/intervals.list -l ERROR
+Arguments Array:	[-T, DepthOfCoverage, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/ko/ko_picard_sorted_accepted_hits.bam, -o, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr//perBaseDoC.out, -L, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr/intervals.list, -l, ERROR]
+GATK command result code: 0
+Depth of Coverage run time:	22 min
+	 ... GATK Depth of Coverage Analysis DONE
+Running GATK Depth of Coverage Analysis ....
+Arguments:	-T DepthOfCoverage -R /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa -I /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam -o /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr//perBaseDoC.out -L /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr/intervals.list -l ERROR
+Arguments Array:	[-T, DepthOfCoverage, -R, /sb/project/afb-431/genomes//Mus_musculus/Ensembl/GRCm38/Sequence/WholeGenomeFasta/genome.fa, -I, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/tophat/wt/wt_picard_sorted_accepted_hits.bam, -o, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr//perBaseDoC.out, -L, /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr/intervals.list, -l, ERROR]
+GATK command result code: 0
+Depth of Coverage run time:	46 min
+	 ... GATK Depth of Coverage Analysis DONE
+Loading transcripts
+Splitting intervals into transcript-oriented DoC files
+Indexing DoC result file: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr//perBaseDoC.out:	1 s
+Finding DoC results per transcript
+DoC Results by interval have been mapped back to the transcripts: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr//perBaseDoC.out:	4 s
+Mapped intervals back to transcripts:	6 s
+Loading transcripts
+Splitting intervals into transcript-oriented DoC files
+Indexing DoC result file: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr//perBaseDoC.out:	1 s
+Finding DoC results per transcript
+DoC Results by interval have been mapped back to the transcripts: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr//perBaseDoC.out:	4 s
+Mapped intervals back to transcripts:	5 s
+Library size link path/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr/..
+Absolute path to metrics.tmp.txt/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/scripts/rnaseqc/../sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/lowexpr/ko.metrics.tmp.txt.rpkm.gct
+Library size link path/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr/..
+Absolute path to metrics.tmp.txt/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/scripts/rnaseqc/../sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/lowexpr/wt.metrics.tmp.txt.rpkm.gct
+Loading transcripts
+Splitting intervals into transcript-oriented DoC files
+Indexing DoC result file: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr//perBaseDoC.out:	1 s
+Finding DoC results per transcript
+DoC Results by interval have been mapped back to the transcripts: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr//perBaseDoC.out:	4 s
+Mapped intervals back to transcripts:	6 s
+Loading transcripts
+Splitting intervals into transcript-oriented DoC files
+Indexing DoC result file: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr//perBaseDoC.out:	1 s
+Finding DoC results per transcript
+DoC Results by interval have been mapped back to the transcripts: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr//perBaseDoC.out:	4 s
+Mapped intervals back to transcripts:	6 s
+Library size link path/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr/..
+Absolute path to metrics.tmp.txt/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/scripts/rnaseqc/../sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/medexpr/ko.metrics.tmp.txt.rpkm.gct
+Library size link path/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr/..
+Absolute path to metrics.tmp.txt/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/scripts/rnaseqc/../sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/medexpr/wt.metrics.tmp.txt.rpkm.gct
+Loading transcripts
+Splitting intervals into transcript-oriented DoC files
+Indexing DoC result file: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr//perBaseDoC.out:	0 s
+Finding DoC results per transcript
+DoC Results by interval have been mapped back to the transcripts: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr//perBaseDoC.out:	1 s
+Mapped intervals back to transcripts:	2 s
+Loading transcripts
+Splitting intervals into transcript-oriented DoC files
+Indexing DoC result file: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr//perBaseDoC.out:	0 s
+Finding DoC results per transcript
+DoC Results by interval have been mapped back to the transcripts: /sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr//perBaseDoC.out:	1 s
+Mapped intervals back to transcripts:	2 s
+Library size link path/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr/..
+Absolute path to metrics.tmp.txt/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/scripts/rnaseqc/../sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/ko/highexpr/ko.metrics.tmp.txt.rpkm.gct
+Library size link path/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr/..
+Absolute path to metrics.tmp.txt/sb/project/afb-431/BIF/VEI/VEI-BIF-P5/scripts/rnaseqc/../sb/project/afb-431/BIF/VEI/VEI-BIF-P5/results/rnaseqc/wt/highexpr/wt.metrics.tmp.txt.rpkm.gct
+Finished Successfully.
+RNA-SeQC Total Runtime:	125 min
